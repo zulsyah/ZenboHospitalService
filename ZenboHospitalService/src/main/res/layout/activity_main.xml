@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/HSLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/RunningLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/runningbg"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="492dp"
+            android:layout_marginTop="544dp"
+            android:gravity="center"
+            android:text="TEST"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_arrived"
+            android:layout_width="416dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="432dp"
+            android:layout_marginTop="652dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnarrived"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_goto"
+            android:layout_width="326dp"
+            android:layout_height="304dp"
+            android:layout_marginStart="476dp"
+            android:layout_marginTop="196dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pharmacyi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_home4"
+            android:layout_width="168dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="1104dp"
+            android:layout_marginTop="616dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnhome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/AboutUsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aboutusbg"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="624dp"
+        tools:layout_editor_absoluteY="386dp"
+        tools:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="168dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="1104dp"
+            android:layout_marginTop="616dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnhome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/VisitorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/visitorbg"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_home2"
+            android:layout_width="168dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="1104dp"
+            android:layout_marginTop="616dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnhome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_ward"
+            android:layout_width="395dp"
+            android:layout_height="123dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/wardicon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wardicon"
+            app:layout_constraintBottom_toTopOf="@+id/btn_shop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_lobby"
+            android:layout_width="395dp"
+            android:layout_height="123dp"
+            android:background="@drawable/lobbyicon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lobbyicon"
+            app:layout_constraintBottom_toTopOf="@+id/btn_ward"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.908" />
+
+        <ImageButton
+            android:id="@+id/btn_shop"
+            android:layout_width="395dp"
+            android:layout_height="123dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/shopicon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shopicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/PatientLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/patientbg"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="-173dp"
+        tools:layout_editor_absoluteY="146dp"
+        tools:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_home3"
+            android:layout_width="168dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="1104dp"
+            android:layout_marginTop="616dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnhome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_pharmacy"
+            android:layout_width="395dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/pharmacyicon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pharmacyicon"
+            app:layout_constraintBottom_toTopOf="@+id/btn_emergency"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.174"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.872" />
+
+        <ImageButton
+            android:id="@+id/btn_checkup"
+            android:layout_width="395dp"
+            android:layout_height="123dp"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/checkupicon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/checkupicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_emergency"
+            android:layout_width="395dp"
+            android:layout_height="123dp"
+            android:layout_marginEnd="728dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/emergencyicon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/emergencyicon"
+            app:layout_constraintBottom_toTopOf="@+id/btn_checkup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/MainMenuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainmenubg"
+        android:focusable="auto"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/btn_patient"
+            android:layout_width="435dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="420dp"
+            android:layout_marginTop="316dp"
+            android:background="@drawable/btnpatient"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btnpatient"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_visitor"
+            android:layout_width="431dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="424dp"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/btnvisitor"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btnvisitor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_aboutus"
+            android:layout_width="323dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="940dp"
+            android:layout_marginTop="700dp"
+            android:background="@drawable/btnaboutus"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btnaboutus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
